@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS cdc_death_table;
 -- Create Death Data Table
 CREATE TABLE cdc_death_table (
 	resident INT,
@@ -16,5 +17,5 @@ CREATE TABLE cdc_death_table (
 	entity_condition_3 VARCHAR,
 	race INT,
 	hispanic INT,
-	id INT PRIMARY KEY NOT NULL 
+	id BIGSERIAL PRIMARY KEY NOT NULL 
 );

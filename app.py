@@ -29,7 +29,7 @@ def confg():
     return Base, deaths, session
 
 
-@app.route("/", methods=["GET"])
+@app.route("/data", methods=["GET"])
 def test():
 
     Base, deaths, session = confg()
@@ -48,8 +48,6 @@ def test():
                     'age_adjusted_death_rate': result.age_adjusted_death_rate
                     }
                     
-            
-            
         load.append(content)
 
     

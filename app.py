@@ -5,7 +5,7 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 import os
 # from test2 import getdata
-from config import USER, PASSWORD, ADDRESS, PORT, DATABASE
+from aconfig import USER, PASSWORD, ADDRESS, PORT, DATABASE
 import collections
 import json
 

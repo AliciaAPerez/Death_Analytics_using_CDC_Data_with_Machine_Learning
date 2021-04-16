@@ -26,20 +26,20 @@ For those who want more statistics and general information on American health, t
 
 #Data Sources:
 The primary source of data for this objective comes from the NCHS. This dataset contains information for the top 10 leading causes of death, and was used to identify heart disease as the leading cause.
-NCHS: https://data.cdc.gov/NCHS/NCHS-Leading-Causes-of-Death-United-States/bi63-dtpu. 
-Kaggle:https://www.kaggle.com/cdc/mortality
-Kaggle:https://www.kaggle.com/cdc/nchs-death-rates-and-causes-of-death
-Please see: https://wonder.cdc.gov/wonder/help/mcd-expanded.html
-https://www.cdc.gov/nchs/data/dvs/Multiple-Cause-Record-Layout-2019-508.pdf
+* NCHS: https://data.cdc.gov/NCHS/NCHS-Leading-Causes-of-Death-United-States/bi63-dtpu. 
+* Kaggle:https://www.kaggle.com/cdc/mortality
+* Kaggle:https://www.kaggle.com/cdc/nchs-death-rates-and-causes-of-death
+* Please see: https://wonder.cdc.gov/wonder/help/mcd-expanded.html
+* https://www.cdc.gov/nchs/data/dvs/Multiple-Cause-Record-Layout-2019-508.pdf
 
 #ETL Process
 * Pyspark was utilized to clean data and create data frames
 * Dataframes were connected to SQL using Postgres and a Death Database was created
-* 
+
 #Data Routes
 * Flask was used to created connection to the Postgres database
 * Routes were used to query the database and create a dictionary
-*
+
 #Website Design
 * Deployment: 
 * Bootstrap was used to create a theme for the page

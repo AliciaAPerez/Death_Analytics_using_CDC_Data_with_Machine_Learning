@@ -51,7 +51,7 @@ def test():
         load.append(content)
 
     
-    return str(load)
+    return jsonify(load)
     print(data)
 
 

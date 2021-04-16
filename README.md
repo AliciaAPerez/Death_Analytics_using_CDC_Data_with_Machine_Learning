@@ -29,7 +29,7 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 * NCHS: https://data.cdc.gov/NCHS/NCHS-Leading-Causes-of-Death-United-States/bi63-dtpu. 
 * Kaggle:https://www.kaggle.com/cdc/mortality
 * Kaggle:https://www.kaggle.com/cdc/nchs-death-rates-and-causes-of-death
-* Kaggle:https://www.kaggle.com/andrewmvd/heart-failure-clinical-data?select=heart_failure_clinical_records_dataset.csv
+* Kaggle:https://www.kaggle.com/ronitf/heart-disease-uci
 * Please see: https://wonder.cdc.gov/wonder/help/mcd-expanded.html
 * https://www.cdc.gov/nchs/data/dvs/Multiple-Cause-Record-Layout-2019-508.pdf
 

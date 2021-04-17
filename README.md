@@ -47,9 +47,14 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 
 # Analysis
 
-### Tableau
+### Tableau (ADD GIFS LATER)
+Ultimately, the objective is to identify the leading cause of death in the United States since 1999, and then identify the states with the highest deaths recorded. TThis analysis was broken down as see below.
+
+#### Leading causes of Death
 We used tableau to analyse the data and plot different visualizations as shown below.
-For this part of the project we used the Center for Disease Control’s (CDC) National Center for Health Statistics (NCHS) data. The website has a  database of age-adjusted death rates and counts across the United States for the top 10 causes of death. Below are the top 10 causes of death in the US:
+For this part of the project we used the Center for Disease Control’s (CDC) National Center for Health Statistics (NCHS) data. The website has a  database of age-adjusted death rates and counts across the United States for the top 10 causes of death. Although the causes of deaths changed positions as they years went by (19999-2017), the 10 causes below reamined at the top.Below are the top 10 causes of death in the US:
+
+As can be seen below, the leading cause of death in the United States  is heart disease, close behind is cancer followed by unintentional injuries.
 
 * Heart Disease
 * Cancer
@@ -61,4 +66,13 @@ For this part of the project we used the Center for Disease Control’s (CDC) Na
 * Influenza & Pneumonia
 * Kidney Disease
 * Suicide
+
+#### States with th highest deaths and a map of the age adjusted death rates
+
+We examined a trend at the state for the age adjested death rates. The minimum and maximum recorded  age rates across all states and years were used to compute the results and observe the changes over time. In the map below, orange represents the lowest death counts per age adjusted , while blue represents the highest. The cbar chart below the map represents the  top 10 states with the highest deaths recorded over time.
+
+* California
+* Florida
+* Texas
+* * New York
 

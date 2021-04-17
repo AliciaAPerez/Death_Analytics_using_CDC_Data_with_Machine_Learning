@@ -45,7 +45,20 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 * Deployment: 
 * Bootstrap was used to create a theme for the page
 
+# Analysis
 
+### Tableau
+We used tableau to analyse the data and plot different visualizations as shown below.
+For this part of the project we used the Center for Disease Control’s (CDC) National Center for Health Statistics (NCHS) data. The website has a  database of age-adjusted death rates and counts across the United States for the top 10 causes of death. Below are the top 10 causes of death in the US:
 
+* Heart Disease
+* Cancer
+*  Unintentional Injuries
+* Chronic Lower Respiratory Disease (CLRD)
+* Stroke
+* Alzheimer’s Disease
+* Diabetes
+* Influenza & Pneumonia
+* Kidney Disease
+* Suicide
 
-## Analysis

@@ -67,12 +67,14 @@ As can be seen below, the leading cause of death in the United States  is heart 
 * Kidney Disease
 * Suicide
 
-#### States with th highest deaths and a map of the age adjusted death rates
+#### States with the highest deaths and a map of the age adjusted death rates
 
 We examined a trend at the state for the age adjested death rates. The minimum and maximum recorded  age rates across all states and years were used to compute the results and observe the changes over time. In the map below, orange represents the lowest death counts per age adjusted , while blue represents the highest. The cbar chart below the map represents the  top 10 states with the highest deaths recorded over time.
 
 * California
 * Florida
 * Texas
-* * New York
+*  New York
+
+
 

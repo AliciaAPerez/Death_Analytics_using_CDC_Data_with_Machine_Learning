@@ -78,7 +78,7 @@ We examined a trend at the state for the age adjested death rates. The minimum a
 
 
 # Machine Learning 
-
+"resident", "education", "sex", "age", "marital_status", "injury_at_work", "manner_of_death", "race", "hispanic"
 
 
 

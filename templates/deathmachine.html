@@ -60,7 +60,19 @@
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Death Machine</h1>
                     
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">When, Where and How You Will Die Muhahaha.</h2>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Accept Your Fate</h2>
+                    <h3 class="text-white-50 mx-auto mt-2 mb-5">Please Enter Your Information</h3>
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="patient-form">Participant Data</label>
+                            <input class="form-control" id="patient-form-input" name="patient-form" type="text" placeholder="AB-">
+                        </div>
+                        <select id="selDataset">
+                            <option value="dataset1">DataSet1</option>
+                            <option value="dataset2">DataSet2</option>
+                        </select>
+                        <button id="button" type="button" class="btn btn-default">Enter</button>
+                    </form>
                 
                 </div>
             </div>
@@ -73,5 +85,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <!-- Core theme JS-->
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/deathmachine.js') }}"></script>
     </body>
 </html>

@@ -4,3 +4,5 @@ DATABASE = "Death_Database"
 USER = "root"
 PASSWORD = "postgres"
 
+# the connections
+

@@ -30,31 +30,31 @@ from sklearn.preprocessing import StandardScaler
 
 scaler = StandardScaler()
 
-x_train = scaler.fit_transform(X_train)
-x_test = scaler.transform(X_test)
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 
 
-# from sklearn.neighbors import KNeighborsClassifier
-# train_scores = []
-# test_scores = []
-# for k in range(1, 20, 2):
-#     knn = KNeighborsClassifier(n_neighbors=k)
-#     knn.fit(X_train, y_train)
-#     train_score = knn.score(X_train, y_train)
-#     test_score = knn.score(X_test, y_test)
-#     train_scores.append(train_score)
-#     test_scores.append(test_score)
-#     print(f"k: {k}, Train/Test Score: {train_score:.3f}/{test_score:.3f}")
+from sklearn.neighbors import KNeighborsClassifier
+train_scores = []
+test_scores = []
+for k in range(1, 20, 2):
+    knn = KNeighborsClassifier(n_neighbors=k)
+    knn.fit(X_train, y_train)
+    train_score = knn.score(X_train, y_train)
+    test_score = knn.score(X_test, y_test)
+    train_scores.append(train_score)
+    test_scores.append(test_score)
+    print(f"k: {k}, Train/Test Score: {train_score:.3f}/{test_score:.3f}")
 
 
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report 
-rf = RandomForestClassifier()
-rf = rf.fit(X_train, y_train)
+# from sklearn.ensemble import RandomForestClassifier
+# from sklearn.metrics import classification_report 
+# rf = RandomForestClassifier()
+# rf = rf.fit(X_train, y_train)
     
-predictions = rf.predict(X_test)
+predictions = knn.predict(X_test)
 predictions
 
 

@@ -1,5 +1,5 @@
 
-let model = "{{ url_for('static', filename='js/death_machine.js') }}";
+let model = "{{ url_for('static', filename='js/death_machine.sav') }}";
 
 
 // Select the button

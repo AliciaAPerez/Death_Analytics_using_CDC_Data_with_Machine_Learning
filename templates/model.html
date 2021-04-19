@@ -47,14 +47,16 @@
                             <a class="dropdown-item" href="/index4">Deaths per 1000 and demographic heart disease</a>
                             <a class="dropdown-item" href="/index5">Life Expectancy and Dashboard Death Table</a>
                         </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data">Data</a>
             </div>
         </div>
         </div>
     </nav>
     <!-- Masthead-->
-
+    <header class="masthead">
     <div class="container main">
-        <div class="jumbotron" style="background-color: rgb(5, 184, 184)" id="holder">
+        <div class="jumbotron" style="background-color: rgb(196, 167, 167)" id="holder">
             <br>
             <center><b>
                     <h2 style="color: rgb(236, 231, 230)" ;>{{ prediction_text}}</h2>
@@ -69,10 +71,10 @@
             <br>
             <p>The fields below represent the following.</p>
             <br>
-            <p>Trestbps = Resting blood pressure</p>
-            <p>Chol = Serum cholestorol in mg/dl</p>
-            <p>Thalach = Maximum heart rate achieved (#)</p>
-            <p>Oldpeak = ST depression induced by exercise relative to rest (#)</p>
+            <div>Trestbps = Resting blood pressure</div>
+            <div>Chol = Serum cholestorol in mg/dl</div>
+            <div>Thalach = Maximum heart rate achieved (#)</div>
+            <div>Oldpeak = ST depression induced by exercise relative to rest (#)</div>
             <br>
             <div class="instructions">
                 <h2>Instructions: </h2>
@@ -129,7 +131,7 @@
             <h2 class="result"></h2>
         </div>
     </div>
-
+    </header>
     <!-- Footer-->
     <!-- Bootstrap core JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

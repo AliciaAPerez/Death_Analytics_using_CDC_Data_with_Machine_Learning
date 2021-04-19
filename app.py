@@ -8,11 +8,16 @@ import os
 from aconfig import USER, PASSWORD, ADDRESS, PORT, DATABASE
 import collections
 import json
+import numpy as np
+import pickle
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
-
+##Routes for the jsonified data ////////////////////////////////////////////////////////////////////////////////////////////////
 def confg():
     connection_string = (
         f'postgresql://{USER}:{PASSWORD}@{ADDRESS}:{PORT}/{DATABASE}')
@@ -54,6 +59,48 @@ def test():
     return jsonify(load)
     print(data)
 
+#Making the heart disease prediction model /////////////////////////////////////////////////////////////////////////////////////////////////
+# Hear Disease model
+model = pickle.load(open('model.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
+
+
+@app.route('/prediction')
+def prediction():
+    return render_template('model.html')
+
+@app.route('/predict',methods=['POST'])
+def predict():
+
+    model = pickle.load(open('model.pkl', 'rb'))
+    scaler = pickle.load(open('scaler.pkl', 'rb'))
+
+    features = [float(x) for x in request.form.values()]
+    final_features = [np.array(features)]
+    final_features = scaler.transform(final_features)    
+    prediction = model.predict(final_features)
+    print("final features",final_features)
+    print("prediction:",prediction)
+    output = round(prediction[0], 2)
+    print(output)
+
+    if output == 0:
+        return render_template('model.html', prediction_text='NOT LIKELY TO HAVE A HEART DISEASE')
+    else:
+         return render_template('model.html', prediction_text='LIKELY TO HAVE A HEART DISEASE')
+        
+@app.route('/predict_api',methods=['POST'])
+def results():
+
+    data = request.get_json(force=True)
+    prediction = model.predict([np.array(list(data.values()))])
+
+    output = prediction[0]
+    return jsonify(output)
+    print(output)
+
+
+#Creating routes for to return the html//////////////////////////////////////////////////////////////////////////////////////////
 
 
 @app.route("/")
@@ -76,30 +123,13 @@ def index4():
 def index5():
     return render_template("index5.html")
 
-@app.route("/index6")
-def index6():
-    return render_template("index6.html")
-
-@app.route("/index7")
-def index7():
-    return render_template("index7.html")
-
-@app.route("/index8")
-def index8():
-    return render_template("index8.html")
-
-@app.route("/index9")
-def index9():
-    return render_template("index9.html")
-
-@app.route("/index10")
-def index10():
-    return render_template("index10.html")
-
 @app.route("/deathmachine")
 def machine():
     return render_template("deathmachine.html")
 
+@app.route("/model")
+def model():
+    return render_template("model.html")
 
 
 

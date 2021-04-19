@@ -123,7 +123,7 @@ def index4():
 def index5():
     return render_template("index5.html")
 
-@app.route("/deathmachine")
+@app.route("/deathmachine", methods=["GET"])
 def machine():
     return render_template("deathmachine.html")
 

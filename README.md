@@ -1,6 +1,6 @@
 # Leading Causes of Death in the US
 
-![alt text](https://github.com/Claude-Hanfou/Web-Design-Visualization/blob/main/Images/Landing%20lg.PNG "Landing Page")
+![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/Backgroung%20image.jpg "Bacgkgroung")
 
 ## Goal
 To analyse the distribution of death in the United States and investigate the trends at a micro level for each state.

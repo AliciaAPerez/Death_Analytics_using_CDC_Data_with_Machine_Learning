@@ -75,13 +75,13 @@ The leading cause of death in the United States is heart disease and remained at
 
 # Machine Learning 
 
-#### Heart Disease Prediction 
+## Heart Disease Prediction 
 Predict whether a patient should be diagnosed with Heart Disease. Examine trends & correlations within our data. Determine which features are most important to Heart Disease diagnosis. We used Machine Learning algorithm where we can train our AI to learn & improve from experience. 
 
-![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/confusion%20matrix.PNG")
+![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/prediction%20heart.JPG "prediction")
 
 
-#### Cause of Death Prediction
+## Cause of Death Prediction
 
 
 

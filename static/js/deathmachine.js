@@ -1,6 +1,6 @@
 let model;
 
-const modelURL = 'http://localhost:5000/model';
+const modelURL = "{{ url_for('static', filename='js/death_machine.js') }}";
 
 
 // Select the button

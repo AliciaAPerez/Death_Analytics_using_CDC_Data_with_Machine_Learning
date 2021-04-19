@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/Users/kathynguyen/opt/anaconda3/envs/newpython/bin/python"
+=======
+    "python.pythonPath": "C:\\Users\\Shadow\\anaconda3\\envs\\air_quality_env\\python.exe"
+>>>>>>> d63ae1b2d2372e09cfea4d885a05d58ae9c8e439
 }

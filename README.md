@@ -1,5 +1,6 @@
 # Leading Causes of Death in the US
 
+![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/Backgroung%20image.jpg "Bacgkgroung")
 
 ## Goal
 To analyse the distribution of death in the United States and investigate the trends at a micro level for each state.
@@ -48,12 +49,14 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 # Analysis
 
 ### Tableau (ADD GIFS LATER)
-Ultimately, the objective is to identify the leading cause of death in the United States since 1999, and then identify the states with the highest deaths recorded. TThis analysis was broken down as see below.
+Ultimately, the objective is to identify the leading cause of death in the United States since 1999, and then identify the states with the highest deaths recorded. 
+We used tableau to analyse the data and plot different visualizations as shown below. This analysis was broken down as see below.
+
+
+#### Age Adjusted Death Rate
+Northern states like Minnesota and Dakota have lowest the age adjusted death rates. Southern states (Louisiana, Kentucky) have the highest heart disease death rates over the years and Wyoming is among the highest with suicide rate on the national level.
 
 #### Leading causes of Death
-We used tableau to analyse the data and plot different visualizations as shown below.
-For this part of the project we used the Center for Disease Control’s (CDC) National Center for Health Statistics (NCHS) data. The website has a  database of age-adjusted death rates and counts across the United States for the top 10 causes of death. Although the causes of deaths changed positions as they years went by (19999-2017), the 10 causes below reamined at the top.Below are the top 10 causes of death in the US:
-
 As can be seen below, the leading cause of death in the United States  is heart disease, close behind is cancer followed by unintentional injuries.
 
 * Heart Disease
@@ -67,14 +70,19 @@ As can be seen below, the leading cause of death in the United States  is heart 
 * Kidney Disease
 * Suicide
 
-#### States with the highest deaths and a map of the age adjusted death rates
+#### Top 10 leading causes of Death
+The leading cause of death in the United States is heart disease and remained at the first position throughout the years. There are little changes in position between the other causes, but in general, these are the top 10 ranked: Heart Disease, Cancer, Unintentional Injuries, Chronic Lower Respiratory Disease (CLRD), Stroke, Alzheimer’s Disease, Diabetes, Influenza & Pneumonia, Kidney Disease, Suicide
 
-We examined a trend at the state for the age adjested death rates. The minimum and maximum recorded  age rates across all states and years were used to compute the results and observe the changes over time. In the map below, orange represents the lowest death counts per age adjusted , while blue represents the highest. The cbar chart below the map represents the  top 10 states with the highest deaths recorded over time.
+# Machine Learning 
 
-* California
-* Florida
-* Texas
-*  New York
+## Heart Disease Prediction 
+Predict whether a patient should be diagnosed with Heart Disease. Examine trends & correlations within our data. Determine which features are most important to Heart Disease diagnosis. We used Machine Learning algorithm where we can train our AI to learn & improve from experience. 
+
+![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/prediction%20heart.JPG "prediction")
+
+
+## Cause of Death Prediction
+
 
 
 

@@ -1,5 +1,6 @@
 # Leading Causes of Death in the US
 
+![alt text](https://github.com/Claude-Hanfou/Web-Design-Visualization/blob/main/Images/Landing%20lg.PNG "Landing Page")
 
 ## Goal
 To analyse the distribution of death in the United States and investigate the trends at a micro level for each state.
@@ -75,6 +76,11 @@ We examined a trend at the state for the age adjested death rates. The minimum a
 * Florida
 * Texas
 *  New York
+
+
+
+
+
 
 
 # Machine Learning 

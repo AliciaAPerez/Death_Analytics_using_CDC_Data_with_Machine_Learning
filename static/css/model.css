@@ -15,7 +15,7 @@
 }
 
 .jumbotron{
-  background-color: rgb(5, 184, 184) !important;
+  background-color: rgb(196, 167, 167) !important;
 }
 
 p{
@@ -44,7 +44,7 @@ a {
 	font-family: Raleway-SemiBold;
 	font-size: 14px;
 	line-height: 1.7;
-	color:rgb(5, 184, 184);
+	color:rgb(196, 167, 167;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -120,9 +120,9 @@ button {
   height: 40px !important;
   width: 100px;
   color: #000 !important;
-  background: rgb(5, 184, 184)!important;
-  background: -webkit-linear-gradient(to right, rgb(5, 184, 184), rgb(5, 184, 184)) !important;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgb(5, 184, 184), rgb(5, 184, 184)) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(196, 167, 167)!important;
+  background: -webkit-linear-gradient(to right, rgb(196, 167, 167), rgb(196, 167, 167)) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(196, 167, 167), rgb(196, 167, 167)) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }

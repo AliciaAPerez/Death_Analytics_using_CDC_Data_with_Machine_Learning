@@ -12,10 +12,18 @@ import numpy as np
 import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
+
+from flask_sqlalchemy import SQLAlchemy
+# DATABASE_URL will contain the database connection string:
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
+# Connects to the database using the app config
+db = SQLAlchemy(app)
+
 
 ##Routes for the jsonified data ////////////////////////////////////////////////////////////////////////////////////////////////
 def confg():
@@ -124,6 +132,7 @@ def index5():
     return render_template("index5.html")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @app.route("/deathmachine")
 =======
 @app.route("/index6")
@@ -148,7 +157,11 @@ def index10():
 
 @app.route("/deathmachine", methods=["GET"])
 >>>>>>> e465b4cb179d3456c7a71a07467fd84fdc30bfb8
+=======
+@app.route("/deathmachine", methods=["GET"])
+>>>>>>> 89381673ce3102a3d4e7a673472ad84a07a1a03e
 def machine():
+    
     return render_template("deathmachine.html")
 
 @app.route("/model")

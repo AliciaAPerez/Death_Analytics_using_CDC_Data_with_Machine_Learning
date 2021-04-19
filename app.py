@@ -14,6 +14,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 
+# DATABASE_URL will contain the database connection string:
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
+# Connects to the database using the app config
+db = SQLAlchemy(app)
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False

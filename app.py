@@ -12,6 +12,7 @@ import numpy as np
 import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 
 
 app = Flask(__name__)
@@ -125,6 +126,7 @@ def index5():
 
 @app.route("/deathmachine", methods=["GET"])
 def machine():
+    
     return render_template("deathmachine.html")
 
 @app.route("/model")

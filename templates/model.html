@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Heart Disease Prediction</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/death.png') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/model.css') }}" rel="stylesheet" />
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">Home Page</a>
+
+            <!-- Navigation-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/deathmachine">Death Machine</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/model">Heart Disease Prediction</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="/index2">Map age adjusted and Leading causes distribution</a>
+                            <a class="dropdown-item" href="/index3">10 leading causes of deaths and top 10 states</a>
+                            <a class="dropdown-item" href="/index4">Deaths per 1000 and demographic heart disease</a>
+                            <a class="dropdown-item" href="/index5">Life Expectancy and Dashboard Death Table</a>
+                        </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+
+    <div class="container main">
+        <div class="jumbotron" style="background-color: rgb(5, 184, 184)" id="holder">
+            <br>
+            <center><b>
+                    <h2 style="color: rgb(236, 231, 230)" ;>{{ prediction_text}}</h2>
+                </b></center>
+            <br>
+            <br>
+            <center>
+                <h1 class='main_heading'> Heart Disease Prediction </h1>
+            </center>
+            <p>This Application uses Machine Learning Algorithm to predict if a person is likely to have a heart
+                disease. This model has a 77% accuracy</p>
+            <br>
+            <p>The fields below represent the following.</p>
+            <br>
+            <p>Trestbps = Resting blood pressure, Chol = Serum cholestorol in mg/dl, Thalach = Maximum heart rate
+                achieved (#), Oldpeak = ST depression induced by exercise relative to rest (#) </p>
+            <br>
+            <div class="instructions">
+                <h2>Instructions: </h2>
+                <p>1. Please Enter values for the following fields</p>
+                <p>2. Click predict below </p>
+            </div>
+
+            <form class="form-horizontal" action="{{ url_for('predict')}}" method="post">
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="age" placeholder="Age" required="required" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="trestbps" placeholder="Trestbps"
+                            required="required" />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="chol" placeholder="Chol" required="required" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="thalach" placeholder="Thalach"
+                            required="required" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="oldpeak" placeholder="oldpeak"
+                            required="required" />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <center><button type="submit" class="button btn btn-default">Predict</button> </center>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <h2 class="result"></h2>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>

@@ -96,7 +96,7 @@ def index9():
 def index10():
     return render_template("index10.html")
 
-@app.route("/deathmachine")
+@app.route("/deathmachine", methods=["GET"])
 def machine():
     return render_template("deathmachine.html")
 

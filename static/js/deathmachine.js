@@ -109,6 +109,7 @@ function runEnter() {
     list.html("");
 
     // append stats to the list
+    list.append("li").text(`Results`);
     list.append("li").text(`You are going to die by Code: ${answer}`);
     list.append("li").text("Key:");
     list.append("li").text("Code 1: Heart Failure, Heart Attack, Heart Disease");

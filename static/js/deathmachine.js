@@ -57,6 +57,7 @@ function runEnter() {
 
     let data = [a,b,c,d,e,f];
     console.log(data);
+
     // console.log(data.shape);
     // let input = nj.array(data).reshape(1, data.length)
     
@@ -69,8 +70,9 @@ function runEnter() {
 // print(tf.shape(t).numpy())
 
 // tf.reshape(t, [3, 3])
-
-    let input = tf.tensor(data);
+    let input = [tf.tensor(data).reshape(-1, data.length)]
+    // let input2 = [input]
+    // let input = tf.tensor(data);
 
 
 
@@ -80,7 +82,7 @@ function runEnter() {
     
     // let input = tf.tensor1d(data)
     
-    console.log(input);
+    console.log(input2);
     console.log(input.shape);
     
     // let results = model.precdict(input);
@@ -122,14 +124,15 @@ function runEnter() {
     list.append("li").text("Code 8: Diabetes");
     list.append("li").text("Code 9: Parkinson's Disease");
     list.append("li").text("Code 10: Accidental Poisoning By and Exposure to Drugs and Other Biological Substances");
-    list.append("li").text("Code 11: Kidney Disease/Failure");
-    list.append("li").text("Code 12: Cirrhosis of the Liver");
-    list.append("li").text("Code 13: Slipping, Tripping, or Falling");
-    list.append("li").text("Code 14: Self-Harm");
-    list.append("li").text("Code 15: Auto Accident");
+    // list.append("li").text("Code 11: Kidney Disease/Failure");
+    // list.append("li").text("Code 12: Cirrhosis of the Liver");
+    // list.append("li").text("Code 13: Slipping, Tripping, or Falling");
+    // list.append("li").text("Code 14: Self-Harm");
+    // list.append("li").text("Code 15: Auto Accident");
 
 };
 
+// 8
 // Codes that got used
 // icd_death_code
 // C349    126123
@@ -141,7 +144,7 @@ function runEnter() {
 // W19      14784
 // I350     12079
 
-
+// 16 
 // icd_death_code
 // I251    428754
 // C349    126123
@@ -159,3 +162,16 @@ function runEnter() {
 // X74      12859
 // V892     11247
 // X95      11184
+
+// 10
+// icd_death_code
+// I251    428754
+// C349    126123
+// J449     94129
+// F03      92868
+// G309     84389
+// J189     36206
+// A419     32554
+// E149     25512
+// G20      22682
+// X44      19194

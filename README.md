@@ -83,10 +83,17 @@ Predict whether a patient should be diagnosed with Heart Disease. Examine trends
 
 ## Cause of Death Prediction
 
-The Machine Learning for the cause of death utilized 2015 causes of death data from the CDC.  The data initially had over two million rows of data, but there were over 3,000 causes of death utilized. Some causes of death only had one entry, and they would not be very helpful. As a starting point, only the deaths with over 10,000 entires were utilized. That was 60 causes of death. Those were further grouped together by their kind. For example, lung cancer and breast cancer were listed as separate entities. 
+The Machine Learning for the cause of death utilized 2015 causes of death data from the CDC.  The data initially had over two million rows of data, but there were over 3,000 causes of death utilized. Some causes of death only had one entry, and they would not be very helpful. As a starting point, only the deaths with over 10,000 entires were utilized. That was 60 causes of death. Those were further grouped together by their kind. For example, lung cancer and breast cancer were listed as separate entities. Eventually, the data was whittled down to ten causes of death for this project. More could be done later once more refinement is gained with the machine learning model with using so much information. 
 
-A form was made for the website to predict the cause of death using the trained model. A person can enter the age, sex, education, race, ethnicity, and marital status to predict how they might die.  
+The following ten ICD codes were used (in order of frequency, with most frequent at the top and decreasing). 
 
-![image](Images/deathpred.png)  
-
-
+1) I251: Heart Failure, Heart Attack, Heart Disease  
+2) C349: Cancer  
+3) J449: COPD  
+4) F03: Dementia  
+5) G309: Alzheimer's Disease  
+6) J189: Pneumonia or other Lung Disease  
+7) A419: Sepsis  
+8) E149: Diabetes  
+9) G20: Parkinson's Disease  
+10) X44: Accidental Poisoning By and Exposure to Drugs and Other Biological Substances  

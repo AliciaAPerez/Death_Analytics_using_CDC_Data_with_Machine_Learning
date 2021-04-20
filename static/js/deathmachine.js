@@ -70,8 +70,11 @@ function runEnter() {
 // print(tf.shape(t).numpy())
 
 // tf.reshape(t, [3, 3])
-    let input = [tf.tensor(data).reshape(-1, data.length)]
-    // let input2 = [input]
+    
+console.log(input);
+console.log(input.shape);
+    var input = tf.tensor(data).reshape(-1, data.length)
+    var input = [input]
     // let input = tf.tensor(data);
 
 
@@ -81,9 +84,7 @@ function runEnter() {
     // console.log(x_array.shape);
     
     // let input = tf.tensor1d(data)
-    
-    console.log(input2);
-    console.log(input.shape);
+
     
     // let results = model.precdict(input);
 

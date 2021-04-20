@@ -17,6 +17,7 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    <!-- <link href="{{ url_for('static', filename='css/model.css') }}" rel="stylesheet" /> -->
 </head>
 
 <body id="page-top">
@@ -68,16 +69,32 @@
 
     <header class="masthead">
         <br><br><br><br><br><br><br><br><br><br><br>
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
+        <div class="container main">
+        <!-- <div class="container d-flex h-100 align-items-center" > -->
+            <!-- <div class="mx-auto text-center"> -->
+                <div class="jumbotron" style="background-color: rgb(129, 129, 129)" id="holder">
                 <h2 style="color: rgb(155, 26, 0)" style="font-size: 50px;" ;>{{ prediction_text}}</h2>
                 <h1 class="mx-auto my-0 text-uppercase">Death Machine</h1>
 
                 <h3 class="text-white-50 mx-auto mt-2 mb-5">Accept Your Fate</h3>
-                <h3 class="text-white-50 mx-auto mt-2 mb-5">Please Enter Your Information</h3>
-                <div class="container">
+                <h3 class="text-white-50 mx-auto mt-2 mb-5">Please see the key at the bottom of the Page and Enter Your Information</h3>
+                <!-- <div class="container"> -->
                     <form class="form-horizontal" action="{{ url_for('causes')}}" method="post">
 
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="Education" placeholder="Education" required="required" />
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="Gender" placeholder="Gender"
+                                    required="required" />
+                            </div>
+                        </div>
+        
+        
                         <div class="form-group">
                             <div class="col-sm-10">
                                 <input class="form-control" type="text" name="age" placeholder="Age" required="required" />
@@ -86,34 +103,20 @@
         
                         <div class="form-group">
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="trestbps" placeholder="Trestbps"
-                                    required="required" />
-                            </div>
-                        </div>
-        
-        
-                        <div class="form-group">
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" name="chol" placeholder="Chol" required="required" />
-                            </div>
-                        </div>
-        
-                        <div class="form-group">
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" name="thalach" placeholder="Thalach"
+                                <input class="form-control" type="text" name="Marital Status" placeholder="Marital Status"
                                     required="required" />
                             </div>
                         </div>
         
                         <div class="form-group">
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="oldpeak" placeholder="oldpeak"
+                                <input class="form-control" type="text" name="Race" placeholder="Race"
                                     required="required" />
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" name="oldpeak" placeholder="oldpeak"
+                                <input class="form-control" type="text" name="Hispanic" placeholder="Hispanic"
                                     required="required" />
                             </div>
                         </div>
@@ -125,6 +128,76 @@
                             </div>
                         </div>
                     </form>
+                    <div>
+                        <ul>
+                            <li>Results:</li>
+                            <li>Legend</li>
+                            <li>Code 1: Heart Failure, Heart Attack, Heart Disease</li>
+                            <li>Code 2: Cancer</li>
+                            <li>Code 3: COPD</li>
+                            <li>Code 4: Alzheimer's Disease</li>
+                            <li>Code 5: Dementia</li>
+                            <li>Code 6: Pneumonia or other Lung Disease</li>
+                            <li>Code 7: Sepsis</li>
+                            <li>Code 8: Diabetes</li>
+                            <li>Code 9: Parkinson's Disease</li>
+                            <li>Code 10: Diabetes</li>
+                            <br>
+                            <li>Entry Legend:</li>
+                            <li id="education">Education</li>
+                                <li>1:8th Grade or Less</li>
+                                <li>2:9-12th Grade, no Diploma</li>
+                                <li>3:High School Graduate or GED</li>
+                                <li>4:Some college credit, no degree</li>
+                                <li>5:Associate Degree</li>
+                                <li>6:Bachelor's Degree</li>
+                                <li>7:Master's Degree</li>
+                                <li>8:Doctorate or Professional Degree</li>
+                                <li>9:Unknown</li>
+                            <br>
+                            <li id="gender"></li>
+                                <li>1:Male</li>
+                                <li>2:Female</li>
+                            <br>
+                            <li id="age">Age</li>
+                            <li id="agea">Free Form</li>
+                            <br>
+                            <li id="marital">Marital Status</li>
+                                <li>1:Never Married, Single</li>
+                                <li>2:Married</li>
+                                <li>3:Widowed</li>
+                                <li>4:Divorced</li>
+                                <li>5:Unknown</li>
+                            <br>
+                            <li id="race">Race</li>
+                                <li>1:White</li>
+                                <li>2:Black</li>
+                                <li>3:American Indian</li>
+                                <li>4:Chinese</li>
+                                <li>5:Japanese</li>
+                                <li>6:Hawaiian</li>
+                                <li>7:Filipino</li>
+                                <li>18:Indian</li>
+                                <li>28:Korean</li>
+                                <li>38:Samoan</li>
+                                <li>48:Vietnamese</li>
+                                <li>58:Guamanian</li>
+                                <li>68:Other Asian or Pacific Islander</li>
+                            <br>
+                            <li id="hispanic">Hispanic</li>
+                                <li>1:Mexican</li>
+                                <li>2:Puerto Rican</li>
+                                <li>3:Cuban</li>
+                                <li>4:Central or South American</li>
+                                <li>5:Other or unknown hispanic</li>
+                                <li>6:Non-Hispanic White</li>
+                                <li>7:Non-Hispanic Black</li>
+                                <li>8:Non-Hispanic other races</li>
+                                <li>9:Hispanic Origin Unknown</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
                     <!-- <div class="row justify-content-center">
                         <div class="col-md-10" id="death-form">
                             <br>
@@ -245,14 +318,14 @@
                             </form>
                         </div>
                     </div>
-                </div>	 -->
+                </div>	 -
 
 
             </div>
         </div>
     </header>
 
-    <!-- D3 -->
+    D3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

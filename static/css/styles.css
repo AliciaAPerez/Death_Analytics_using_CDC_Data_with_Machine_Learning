@@ -88,7 +88,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: white;
+   font-size: larger;
+   font-family: 'arial';
+   padding-left: 5%;
+
 }
+
 
 abbr[title],
 abbr[data-original-title] {
@@ -3074,8 +3080,9 @@ input[type=button].btn-block {
   border-radius: 0.25rem;
 }
 .tableauPlaceholder {
-  height: 600px !important;
-  margin-top: 1in;
+  /* height: 500px !important; */
+  margin-top: 10px;
+  margin-left: 100px;
 }
 .dropdown-menu-left {
   right: auto;
@@ -10236,7 +10243,7 @@ body {
 }
 
 .masthead {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: auto;
   min-height: 35rem;

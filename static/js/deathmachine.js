@@ -70,7 +70,7 @@ function runEnter() {
 
 // tf.reshape(t, [3, 3])
 
-    let input = tf.tensor(data,);
+    let input = tf.tensor(data);
 
 
 
@@ -129,3 +129,33 @@ function runEnter() {
     list.append("li").text("Code 15: Auto Accident");
 
 };
+
+// Codes that got used
+// icd_death_code
+// C349    126123
+// I219     92574
+// G309     84389
+// I500     59880
+// I250     55043
+// I48      19208
+// W19      14784
+// I350     12079
+
+
+// icd_death_code
+// I251    428754
+// C349    126123
+// J449     94129
+// F03      92868
+// G309     84389
+// J189     36206
+// A419     32554
+// E149     25512
+// G20      22682
+// X44      19194
+// N185     15933
+// K746     15325
+// W19      14784
+// X74      12859
+// V892     11247
+// X95      11184

@@ -21,7 +21,7 @@ CREATE TABLE cdc_death_table (
 );
 
 -- DROP TABLE IF EXISTS life_expectancy;
--- Create Death Data Table
+-- Create life_expectancy Table
 CREATE TABLE life_expectancy (
 	year VARCHAR,
 	race VARCHAR,
@@ -32,7 +32,7 @@ CREATE TABLE life_expectancy (
 );
 
 -- DROP TABLE IF EXISTS leading_causes_death;
--- Create Death Data Table
+-- Create leading_causes_death Table
 CREATE TABLE leading_causes_death (
 	year VARCHAR,
 	cause VARCHAR,
@@ -44,7 +44,7 @@ CREATE TABLE leading_causes_death (
 );
 
 -- DROP TABLE IF EXISTS UN_Data;
--- Create Death Data Table
+-- Create UN_Data Table
 CREATE TABLE UN_Data (
 	Country VARCHAR,
 	Year VARCHAR,

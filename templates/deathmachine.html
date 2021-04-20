@@ -70,13 +70,62 @@
         <br><br><br><br><br><br><br><br><br><br><br>
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-
+                <h2 style="color: rgb(155, 26, 0)" style="font-size: 50px;" ;>{{ prediction_text}}</h2>
                 <h1 class="mx-auto my-0 text-uppercase">Death Machine</h1>
 
                 <h3 class="text-white-50 mx-auto mt-2 mb-5">Accept Your Fate</h3>
                 <h3 class="text-white-50 mx-auto mt-2 mb-5">Please Enter Your Information</h3>
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <form class="form-horizontal" action="{{ url_for('causes')}}" method="post">
+
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="age" placeholder="Age" required="required" />
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="trestbps" placeholder="Trestbps"
+                                    required="required" />
+                            </div>
+                        </div>
+        
+        
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="chol" placeholder="Chol" required="required" />
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="thalach" placeholder="Thalach"
+                                    required="required" />
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="oldpeak" placeholder="oldpeak"
+                                    required="required" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="oldpeak" placeholder="oldpeak"
+                                    required="required" />
+                            </div>
+                        </div>
+        
+        
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <center><button type="submit" class="button btn btn-default">Predict</button> </center>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <div class="row justify-content-center">
                         <div class="col-md-10" id="death-form">
                             <br>
                             <h2 style="color: rgb(155, 26, 0)" style="font-size: 50px;" ;>{{cause_death}}</h2>
@@ -84,7 +133,7 @@
                             <p id="subj-form">Cause of Death Prediction</p>
                             <form id="subj-form">
                                 <div class="form-group">
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         
                                         <label for="subj-form">Education Level</label>
                                         <br>
@@ -102,7 +151,7 @@
                                         <br>
                                         
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         <label for="subj-form">Gender</label>
                                         <br>
                                         <select id="gender">
@@ -112,14 +161,14 @@
                                         <br>
                                         <br>
                                     </div>
-                                    <div class="col-sm-7" id="age-box">
+                                    <div class="col-sm-10" id="age-box">
                                         <label for="subj-form">Age</label>
                                         <br>
                                         <input class="form-control" id="age" type="int"name="Education Level" placeholder="Input Age" required="required" />
                                     </div>
                                     <br>
                                     
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         <label for="subj-form">Marital Status</label>
                                         <br>
                                         <select id="marital">
@@ -132,7 +181,7 @@
                                         <br>
                                         
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         <label for="subj-form">Race</label>
                                         <br>
                                         <select id="race">
@@ -153,7 +202,7 @@
                                         <br>
                                         
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         <label for="subj-form">Hispanic</label>
                                         <br>
                                         <select id="hispanic">
@@ -173,12 +222,12 @@
                                     <br>
                                     <button id="button" type="submit" class="btn btn-default">Enter</button>
                                     <br>
-                                    <div class="col-sm-7">
-                                        <!-- <label for="subj-form">Results</label> -->
+                                    <div class="col-sm-10">
+                                        
                                         <ul class="results"></ul>
             
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-10">
                                         <ul>
                                             <li>Legend</li>
                                             <li>Code 1: Heart Failure, Heart Attack, Heart Disease</li>
@@ -196,7 +245,7 @@
                             </form>
                         </div>
                     </div>
-                </div>	
+                </div>	 -->
 
 
             </div>

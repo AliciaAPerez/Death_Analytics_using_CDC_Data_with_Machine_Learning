@@ -102,3 +102,5 @@ Keras was used to make the machine learning model. It was converted into a tenso
 After the data had been cleaned up and ready to be put into the model, there were 962411 rows of data. 721808 were used for training and 240603 for testing. 
 
 The final model used layers 
+
+(/Images/deathpred2.png)  

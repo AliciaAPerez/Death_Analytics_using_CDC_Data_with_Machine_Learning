@@ -91,11 +91,12 @@ def predict():
     print("prediction:",prediction)
     output = round(prediction[0], 2)
     print(output)
+    console.log(output)
 
     if output == 0:
-        return render_template('model.html', prediction_text='NOT LIKELY TO HAVE A HEART DISEASE')
+        return render_template('model.html', prediction_text='NOT LIKELY TO HAVE HEART DISEASE')
     else:
-         return render_template('model.html', prediction_text='LIKELY TO HAVE A HEART DISEASE')
+        return render_template('model.html', prediction_text='LIKELY TO HAVE HEART DISEASE')
         
 @app.route('/predict_api',methods=['POST'])
 def results():

@@ -13,6 +13,8 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
+from keras.models import load_model
+death_model = load_model('death_machine_keras10.h5')
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
@@ -107,6 +109,52 @@ def results():
     return jsonify(output)
     print(output)
 
+# ////////////////////////////////////////////////
+@app.route('/causes',methods=['GET','POST'])
+def causes():
+#     data = [float(x) for x in request.form.values()]
+#     death_model = load_model('death_machine_keras10.h5')
+#     # model = self.death_model()
+#     results = death_model.predict([np.array(list(data.values()))])
+#     output = results[0]
+    model = pickle.load(open('clf_death_model2.pkl', 'rb'))
+    # scaler = pickle.load(open('scaler.pkl', 'rb'))
+
+    features = [float(x) for x in request.form.values()]
+    final_features = [np.array(features)]
+    final_features = scaler.transform(final_features)    
+    prediction = model.predict(final_features)
+    print("final features",final_features)
+    print("prediction:",prediction)
+    # output = round(prediction[0], 2)
+    # print(output)
+    # console.log(output)
+    return render_template('deathmachine.html', prediction_text= f"Code: {prediction} Please see Legend Below")
+        
+
+    # params = flask.request.json
+    # if (params == None):
+    #     params = flask.request.args
+
+    # if (params != None):
+    #     x=pd.DataFrame.from(params, orient='index').transpose():
+    #         data["prediction"] = str(death_model.predict()[0][0])
+    #         data["success"] = True
+
+    # return flask.jsonify(data)
+
+    # death_model = load_model('death_machine_keras10.h5')
+    # features = request.form.values()
+    # features = [float(x) for x in request.form.values()]
+    # final_features = [np.array(features)]
+    # final_features = scaler.transform(final_features)    
+    # prediction = model().predict(final_features)
+    # print(features)
+    # print(final_features)
+    # print(prediction)
+    # return features
+    # return render_template('deathmachine.html', prediction_text= f"Code: {output} Please see Legend Below")
+
 
 #Creating routes for to return the html//////////////////////////////////////////////////////////////////////////////////////////
 
@@ -151,8 +199,10 @@ def index9():
 def index10():
     return render_template("index10.html")    
 
-@app.route("/deathmachine", methods=["GET"])
+
+@app.route("/deathmachine")
 def machine():
+
     return render_template("deathmachine.html")
 
 @app.route("/model")

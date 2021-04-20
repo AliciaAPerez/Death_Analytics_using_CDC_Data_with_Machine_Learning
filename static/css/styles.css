@@ -98,6 +98,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  
 }
 
 p {
@@ -3100,8 +3101,10 @@ input[type=button].btn-block {
   margin-left: 100px;
 }
 h7{
-  text-align: right;
-  color: white;
+  margin-top: 100px;
+  margin-left: 65px;
+  color: rgb(7, 250, 250);
+  font-size: xx-large;
 }
 .dropdown-menu-left {
   right: auto;

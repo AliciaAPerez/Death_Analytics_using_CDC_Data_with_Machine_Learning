@@ -48,19 +48,20 @@
   box-sizing: border-box;
 }
 
+
 #death-form {
   background-color: rgb(185, 185, 185);
-  text-align: center;
+  text-align:justify;
 }
 
-#age-box{
+/* #age-box{
   text-align: center;
   align-content: center;
 }
 
 #age{
   align-content: center;
-}
+} */
 
 html {
   font-family: sans-serif;
@@ -10257,7 +10258,7 @@ body {
 }
 
 .masthead {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: auto;
   min-height: 35rem;

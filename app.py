@@ -13,8 +13,6 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
-import tensorflow
-import tensorflowjs
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False

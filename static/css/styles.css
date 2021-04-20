@@ -3099,6 +3099,10 @@ input[type=button].btn-block {
   margin-top: 10px;
   margin-left: 100px;
 }
+h7{
+  text-align: right;
+  color: white;
+}
 .dropdown-menu-left {
   right: auto;
   left: 0;

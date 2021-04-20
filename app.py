@@ -13,8 +13,8 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
-from keras.models import load_model
-death_model = load_model('death_machine_keras10.h5')
+# from keras.models import load_model
+# death_model = load_model('death_machine_keras10.h5')
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False

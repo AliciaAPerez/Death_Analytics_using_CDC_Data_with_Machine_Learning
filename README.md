@@ -97,3 +97,8 @@ The following ten ICD codes were used (in order of frequency, with most frequent
 8) E149: Diabetes  
 9) G20: Parkinson's Disease  
 10) X44: Accidental Poisoning By and Exposure to Drugs and Other Biological Substances  
+
+Keras was used to make the machine learning model. It was converted into a tensorflowjs file to be used in javascript to be brought to the website. 
+After the data had been cleaned up and ready to be put into the model, there were 962411 rows of data. 721808 were used for training and 240603 for testing. 
+
+The final model used layers 

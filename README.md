@@ -48,7 +48,7 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 
 # Analysis
 
-### Tableau (ADD GIFS LATER)
+### Tableau 
 Ultimately, the objective is to identify the leading cause of death in the United States since 1999, and then identify the states with the highest deaths recorded. 
 We used tableau to analyse the data and plot different visualizations as shown below. This analysis was broken down as see below.
 

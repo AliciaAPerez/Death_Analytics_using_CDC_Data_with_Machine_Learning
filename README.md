@@ -1,18 +1,17 @@
 # Leading Causes of Death in the US
 
-![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/Backgroung%20image.jpg "Bacgkgroung")
+![alt text](https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/Backgroung%20image.jpg "Bacgkground")
 
 ## Goal
-To analyse the distribution of death in the United States and investigate the trends at a micro level for each state.
+To analyze the distribution of death in the United States and investigate the trends at a micro level for each state.
 
-## Website
+## Background
 
 <img src="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/website.gif" width="500" height="400" />       
 
-## Background
-According to data from the National Center for Health Statistics (NCHS), which is overseen by the Center for Disease Control (CDC), one of the leading causes of death in the United States is heart disease. The CDC provides data for each recorded death that occured on the US territory, including the causes of death, the age adjusted death rate, the location etc. For this project, we selected we selected among other datasets, the the age-adjusted death rates for the 10 leading causes of death in the United States. The objective of this project is to analyse the causes of deaths distribution across the leading states in the US and point out any trend that might among a certain demographic.In addition, we also want to be able to predict the death of an indivisual by using machine learning to create a model capable of understanding our data and rendering the information needed. The analysis also covers at a very micro level what variables significantly affect  life expectancy in the United States.Verified reporting of this data starts as early as  1999.
+According to data from the National Center for Health Statistics (NCHS), which is overseen by the Center for Disease Control (CDC), one of the leading causes of death in the United States is heart disease. The CDC provides data for each recorded death that occurred on the US territory, including the causes of death, the age adjusted death rate, the location etc. For this project, we selected we selected among other datasets, the occurred age-adjusted death rates for the 10 leading causes of death in the United States. The objective of this project is to analyze the causes of deaths distribution across the leading states in the US and point out any trend that might among a certain demographic. In addition, we also want to be able to predict the death of an individual by using machine learning to create a model capable of understanding our data and rendering the information needed. The analysis also covers at a very micro level what variables significantly affect life expectancy in the United States. Verified reporting of this data starts as early as 1999.
 
-Americans die each year and the leading causes of death account for a large portion of mortality. This project aims at providing a visula representation of what the leading of causes of deaths are for Americans and which states have the highest number of deaths and what is the cause of death. Additionally, analysis also take a look at factors such as  age and population size for each state. The main purpose of the Heroku app is to provide an informative and straightforward representation of data on the leading causes of death to not only to educate but also to make people interested.
+Americans die each year and the leading causes of death account for a large portion of mortality. This project aims at providing a visual representation of what the leading of causes of deaths are for Americans and which states have the highest number of deaths and what is the cause of death. Additionally, analysis also take a look at factors such as age and population size for each state. The main purpose of the Heroku app is to provide an informative and straightforward representation of data on the leading causes of death to not only to educate but also to make people interested.
 
 ## Technologies Used
 * Pandas
@@ -54,14 +53,14 @@ The primary source of data for this objective comes from the NCHS. This dataset 
 
 ### Tableau 
 Ultimately, the objective is to identify the leading cause of death in the United States since 1999, and then identify the states with the highest deaths recorded. 
-We used tableau to analyse the data and plot different visualizations as shown below. This analysis was broken down as see below.
+We used tableau to analyze the data and plot different visualizations as shown below. This analysis was broken down as see below.
 
 
 #### Age Adjusted Death Rate
 Northern states like Minnesota and Dakota have lowest the age adjusted death rates. Southern states (Louisiana, Kentucky) have the highest heart disease death rates over the years and Wyoming is among the highest with suicide rate on the national level.
 
 #### Leading causes of Death
-As can be seen below, the leading cause of death in the United States  is heart disease, close behind is cancer followed by unintentional injuries.
+As can be seen below, the leading cause of death in the United States is heart disease, close behind is cancer followed by unintentional injuries.
 
 * Heart Disease
 * Cancer
@@ -87,7 +86,7 @@ Predict whether a patient should be diagnosed with Heart Disease. Examine trends
 
 ## Cause of Death Prediction
 
-The Machine Learning for the cause of death utilized 2015 causes of death data from the CDC.  The data initially had over two million rows of data, but there were over 3,000 causes of death utilized. Some causes of death only had one entry, and they would not be very helpful. As a starting point, only the deaths with over 10,000 entires were utilized. That was 60 causes of death. Those were further grouped together by their kind. For example, lung cancer and breast cancer were listed as separate entities. Eventually, the data was whittled down to ten causes of death for this project. More could be done later once more refinement is gained with the machine learning model with using so much information. 
+The Machine Learning for the cause of death utilized 2015 causes of death data from the CDC.  The data initially had over two million rows of data, but there were over 3,000 causes of death utilized. Some causes of death only had one entry, and they would not be very helpful. As a starting point, only the deaths with over 10,000 entries were utilized. That was 60 causes of death. Those were further grouped together by their kind. For example, lung cancer and breast cancer were listed as separate entities. Eventually, the data was whittled down to ten causes of death for this project. More could be done later once more refinement is gained with the machine learning model with using so much information. 
 
 The following ten ICD codes were used (in order of frequency, with most frequent at the top and decreasing). 
 
@@ -103,8 +102,12 @@ The following ten ICD codes were used (in order of frequency, with most frequent
 10) X44: Accidental Poisoning By and Exposure to Drugs and Other Biological Substances  
 
 Keras was used to make the machine learning model. It was converted into a tensorflowjs file to be used in javascript to be brought to the website. 
-After the data had been cleaned up and ready to be put into the model, there were 962411 rows of data. 721808 were used for training and 240603 for testing. 
+After the data had been cleaned up and ready to be put into the model, there were 962,411 rows of data. Roughly 721,808 were used for training and 240,603 for testing. 7 layers were used for this, and it was steadily improving with more layers. 
 
-The final model used layers 
+However, the model pushed to the project was not Keras. Due to issues with deployment to the flask app, another model was used to at least make the project function. A random forest model was used to make it work for the app. 
 
-(/Images/deathpred2.png)  
+The accuracy rate on that model is fairly low, so it cannot be taken as a good accurate model. With more time, the project will be updated to go back to the original model and finesse to make it better and get it working on the app. 
+
+  ![image](/Images/deathpred2.png)  
+
+The prediction model requires education, gender, age, marital status, race, and whether a person is Hispanic as inputs to use the model. The original data also included other medical issues the person who died had. It is for future intention to break down that information and add it to the model and make it more precise. 

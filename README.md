@@ -7,7 +7,7 @@ To analyse the distribution of death in the United States and investigate the tr
 
 ## Background
 
-<img src="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/website.gif" width="500" height="500" />       
+<img src="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/website.gif" width="900" height="900" />       
 
 According to data from the National Center for Health Statistics (NCHS), which is overseen by the Center for Disease Control (CDC), one of the leading causes of death in the United States is heart disease. The CDC provides data for each recorded death that occured on the US territory, including the causes of death, the age adjusted death rate, the location etc. For this project, we selected we selected among other datasets, the the age-adjusted death rates for the 10 leading causes of death in the United States. The objective of this project is to analyse the causes of deaths distribution across the leading states in the US and point out any trend that might among a certain demographic.In addition, we also want to be able to predict the death of an indivisual by using machine learning to create a model capable of understanding our data and rendering the information needed. The analysis also covers at a very micro level what variables significantly affect  life expectancy in the United States.Verified reporting of this data starts as early as  1999.
 

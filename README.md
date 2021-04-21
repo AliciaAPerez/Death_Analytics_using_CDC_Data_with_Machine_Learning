@@ -6,11 +6,12 @@
 To analyse the distribution of death in the United States and investigate the trends at a micro level for each state.
 
 ## Background
+
+<img src="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/website.gif" width="500" height="500" />       
+
 According to data from the National Center for Health Statistics (NCHS), which is overseen by the Center for Disease Control (CDC), one of the leading causes of death in the United States is heart disease. The CDC provides data for each recorded death that occured on the US territory, including the causes of death, the age adjusted death rate, the location etc. For this project, we selected we selected among other datasets, the the age-adjusted death rates for the 10 leading causes of death in the United States. The objective of this project is to analyse the causes of deaths distribution across the leading states in the US and point out any trend that might among a certain demographic.In addition, we also want to be able to predict the death of an indivisual by using machine learning to create a model capable of understanding our data and rendering the information needed. The analysis also covers at a very micro level what variables significantly affect  life expectancy in the United States.Verified reporting of this data starts as early as  1999.
 
 Americans die each year and the leading causes of death account for a large portion of mortality. This project aims at providing a visula representation of what the leading of causes of deaths are for Americans and which states have the highest number of deaths and what is the cause of death. Additionally, analysis also take a look at factors such as  age and population size for each state. The main purpose of the Heroku app is to provide an informative and straightforward representation of data on the leading causes of death to not only to educate but also to make people interested.
-
-![euro_map_3](https://media.giphy.com/media/H5bmCWmT4AwY0QGyMa/giphy.gif)
 
 ## Technologies Used
 * Pandas

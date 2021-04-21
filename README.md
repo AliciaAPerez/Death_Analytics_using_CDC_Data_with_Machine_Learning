@@ -10,6 +10,8 @@ According to data from the National Center for Health Statistics (NCHS), which i
 
 Americans die each year and the leading causes of death account for a large portion of mortality. This project aims at providing a visula representation of what the leading of causes of deaths are for Americans and which states have the highest number of deaths and what is the cause of death. Additionally, analysis also take a look at factors such as  age and population size for each state. The main purpose of the Heroku app is to provide an informative and straightforward representation of data on the leading causes of death to not only to educate but also to make people interested.
 
+![euro_map_3](https://media.giphy.com/media/H5bmCWmT4AwY0QGyMa/giphy.gif)
+
 ## Technologies Used
 * Pandas
 * Flask

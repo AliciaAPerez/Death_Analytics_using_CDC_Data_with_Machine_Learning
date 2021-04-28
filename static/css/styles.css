@@ -54,6 +54,22 @@
   text-align:justify;
 }
 
+/* .list-group{
+  background-color: honeydew;
+} */
+
+/* .t-group-item-primary {
+  background-color: black !important;
+} */
+
+
+
+.list-group-item-info {
+  background-color: whitesmoke !important;
+}
+
+
+
 /* #age-box{
   text-align: center;
   align-content: center;

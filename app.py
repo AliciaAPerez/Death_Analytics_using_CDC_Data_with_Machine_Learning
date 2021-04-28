@@ -209,6 +209,10 @@ def machine():
 def model():
     return render_template("model.html")
 
+@app.route("/info")
+def info():
+    return render_template("info.html")
+
 
 
 # @app.route('/static/<path:path>')

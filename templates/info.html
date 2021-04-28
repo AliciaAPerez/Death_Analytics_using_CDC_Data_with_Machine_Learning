@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Death</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/death.png') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">Home Page</a>
+
+            <!-- Navigation-->
+            <!-- </button> -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/deathmachine">Death Machine</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/model">Heart Disease Prediction</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="/index2">Age Adjusted Death Rate All Causes</a>
+                            <a class="dropdown-item" href="/index3">Leading Causes of Death Distribution</a>
+                            
+                            <a class="dropdown-item" href="/index5">Top 10 Leading Causes of Death</a>
+                            <a class="dropdown-item" href="/index6">Top 10 States with Highest Deaths</a>
+                            <a class="dropdown-item" href="/index7">Total Deaths by Cause per 1000 Population</a>
+                            <a class="dropdown-item" href="/index8">Heart Disease Mortality Rate(Top 10 States)</a>
+                            <a class="dropdown-item" href="/index9">Gender Average Life Expectancy</a>
+                            <a class="dropdown-item" href="/index10">Deaths Prediction</a>
+
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data">Data</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info">Info</a>
+                </ul>
+
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="mx-auto my-0 text-uppercase">Git Hub Repository</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-primary"><a href="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning" target="_blank">Death Analytics using CDC Data with Machine Learning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <h3 class="mx-auto my-0 text-uppercase">Sources</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">NCHS</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://data.cdc.gov/NCHS/NCHS-Leading-Causes-of-Death-United-States/bi63-dtpu" target="_blank">https://data.cdc.gov/NCHS/NCHS-Leading-Causes-of-Death-United-States/bi63-dtpu</a></li>
+                            <li class="list-group-item list-group-item-info">Kaggle Data: CDC Data 2005-2015</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.kaggle.com/cdc/mortality" target="_blank">https://www.kaggle.com/cdc/mortality</a></li>
+                            <li class="list-group-item list-group-item-info">Kaggle Data: NCHS Death Rates and Causes of Death</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.kaggle.com/cdc/nchs-death-rates-and-causes-of-death" target="_blank">https://www.kaggle.com/cdc/nchs-death-rates-and-causes-of-death</a></li>
+                            <li class="list-group-item list-group-item-info">Kaggle Data: Heart Disease UCI</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.kaggle.com/ronitf/heart-disease-uci" target="_blank">https://www.kaggle.com/ronitf/heart-disease-uci</a></li>
+                            <li class="list-group-item list-group-item-info">CDC Documentation</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://wonder.cdc.gov/wonder/help/mcd-expanded.html" target="_blank">https://wonder.cdc.gov/wonder/help/mcd-expanded.html</a></li>
+                            <li class="list-group-item list-group-item-info">More CDC Documentation</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.cdc.gov/nchs/data/dvs/Multiple-Cause-Record-Layout-2019-508.pdf" target="_blank">https://www.cdc.gov/nchs/data/dvs/Multiple-Cause-Record-Layout-2019-508.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <h3 class="mx-auto my-0 text-uppercase">Contributors</h3>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">Claude Hanfou</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://github.com/Claude-Hanfou" target="_blank">Git Hub Profile: Claude-Hanfou</a></li>
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.linkedin.com/in/claude-hanfou/" target="_blank">Linkedin Profile: Claude Hanfou</a></li>
+                            <li class="list-group-item list-group-item-info">Kathy Nguyen</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://github.com/kcknguyen" target="_blank">Git Hub Profile: kcknguyen</a></li>
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.linkedin.com/in/kathy-nguyen-7900a162/" target="_blank">Linkedin Profile: kathy-nguyen</a></li>
+                            <li class="list-group-item list-group-item-info">Alicia Perez</li> 
+                            <li class="list-group-item list-group-item-primary"><a href="https://github.com/AliciaAPerez" target="_blank">Git Hub Profile: AliciaAPerez</a></li>
+                            <li class="list-group-item list-group-item-primary"><a href="https://www.linkedin.com/in/aliciaaperez/" target="_blank">Linkedin Profile: Alicia A Perez</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+
+    </header>
+    <body id="page-top">
+
+        </section>
+        <!-- Footer-->
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+
+</html>

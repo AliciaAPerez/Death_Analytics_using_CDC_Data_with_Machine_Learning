@@ -5,6 +5,9 @@
 ## Goal
 To analyze the distribution of death in the United States and investigate the trends at a micro level for each state.
 
+# Heroku App
+The deployed app can be viewed here https://death-machine.herokuapp.com/
+
 ## Background
 
 <img src="https://github.com/AliciaAPerez/Death_Analytics_using_CDC_Data_with_Machine_Learning/blob/main/Images/website.gif" width="500" height="400" />       
